@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>letters in alphabetical order</title>
+</head>
+<body>
+
+	<h2>Sort String alphabetically</h2>
+	<script>
+     
+        var string ="sohel";
+        var num=[];
+        for(var i=0;i<string.length;i++){
+            num.push(string.charCodeAt(i));
+
+        }
+        var num2=num.sort(function(a,b){
+            return a-b;  })
+            var ans ="";
+            for (var j= 0;j<num.length;j++){
+                ans +=String.fromCharCode(num[j]);
+            }
+      
+        document.write(ans);
+	</script>
+  
+</body>
+</html>

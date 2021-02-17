@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd places value</title>
+</head>
+<body>
+    <script>
+        var arr = [3, 45, 1, 66, 45, 22];
+
+function odd(a) {
+  var ar = [];
+
+  for (var i = 0; i < a.length; i++) {
+    if(i % 2 === 0) { 
+        ar.push(a[i]);
+    }
+}
+
+  return ar;
+}
+document.write(" array of element is : " + arr + "<br> Odd Places Element is : ");
+document.write(odd( arr));
+
+    </script>
+</body>
+</html>

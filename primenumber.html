@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+
+    <title>Print Prime Number 1 to 10</title>
+</head>
+
+<body>
+    <script>
+
+        var ct = 0, n = 0, i = 1, j = 1;
+        while (n < 10) {
+            j = 1;
+            ct = 0;
+            while (j <= i) {
+                if (i % j == 0)
+                    ct++;
+                j++;
+            }
+            if (ct == 2) {
+
+                document.writeln(i);
+
+                n++;
+            }
+            i++;
+        }
+
+    </script>
+</body>
+
+</html>

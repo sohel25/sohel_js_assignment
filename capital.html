@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert first letter to Capital</title>
+</head>
+<body>
+    <script>
+        function first_capital(s) {
+            ans = s.charCodeAt(0);
+            if(ans>64 && ans<91){
+                return s ;
+            }
+            else{
+                ans -=32;
+                ans =String.fromCharCode(ans);
+                for(var i=1;i<s.length;i++){
+                    ans +=s[i];
+                }
+                return ans;
+            }
+  }
+  
+  document.write(first_capital('sohel'));
+    </script>
+    
+</body>
+</html>
